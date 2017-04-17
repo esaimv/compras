@@ -1,1 +1,9 @@
 C:\Users\Esai\visual studio\Compras\Compras\bin\Debug\Compras.exe.config
+C:\Users\Esai\visual studio\Compras\Compras\bin\Debug\Compras.exe
+C:\Users\Esai\visual studio\Compras\Compras\bin\Debug\Compras.pdb
+C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.csprojResolveAssemblyReference.cache
+C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.Form1.resources
+C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.Properties.Resources.resources
+C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache
+C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.exe
+C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.pdb
