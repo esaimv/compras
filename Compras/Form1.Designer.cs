@@ -32,30 +32,30 @@
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ingresarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BuscartextBox = new System.Windows.Forms.TextBox();
-            this.Buscarbtn = new System.Windows.Forms.Button();
             this.Todosbtn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.IdtextBox = new System.Windows.Forms.TextBox();
-            this.DescripciontextBox = new System.Windows.Forms.TextBox();
-            this.TipotextBox = new System.Windows.Forms.TextBox();
+            this.Buscarbtn = new System.Windows.Forms.Button();
+            this.BuscartextBox = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.StocktextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.TipotextBox = new System.Windows.Forms.TextBox();
+            this.DescripciontextBox = new System.Windows.Forms.TextBox();
+            this.IdtextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -81,7 +81,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // facturaToolStripMenuItem
@@ -93,14 +93,6 @@
             this.facturaToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.facturaToolStripMenuItem.Text = "Facturas";
             this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
-            // 
-            // pedidosToolStripMenuItem
-            // 
-            this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoPedidoToolStripMenuItem});
-            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.pedidosToolStripMenuItem.Text = "Pedidos";
             // 
             // ingresarFacturaToolStripMenuItem
             // 
@@ -114,10 +106,18 @@
             this.consultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.consultarFacturaToolStripMenuItem.Text = "Consultar factura";
             // 
+            // pedidosToolStripMenuItem
+            // 
+            this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nuevoPedidoToolStripMenuItem});
+            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.pedidosToolStripMenuItem.Text = "Pedidos";
+            // 
             // nuevoPedidoToolStripMenuItem
             // 
             this.nuevoPedidoToolStripMenuItem.Name = "nuevoPedidoToolStripMenuItem";
-            this.nuevoPedidoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoPedidoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.nuevoPedidoToolStripMenuItem.Text = "Nuevo pedido";
             // 
             // panel1
@@ -132,6 +132,42 @@
             this.panel1.Size = new System.Drawing.Size(768, 559);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Todosbtn
+            // 
+            this.Todosbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Todosbtn.Location = new System.Drawing.Point(474, 17);
+            this.Todosbtn.Name = "Todosbtn";
+            this.Todosbtn.Size = new System.Drawing.Size(201, 36);
+            this.Todosbtn.TabIndex = 3;
+            this.Todosbtn.Text = "Desplegar todos";
+            this.Todosbtn.UseVisualStyleBackColor = true;
+            // 
+            // Buscarbtn
+            // 
+            this.Buscarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buscarbtn.Location = new System.Drawing.Point(332, 17);
+            this.Buscarbtn.Name = "Buscarbtn";
+            this.Buscarbtn.Size = new System.Drawing.Size(125, 36);
+            this.Buscarbtn.TabIndex = 2;
+            this.Buscarbtn.Text = "Buscar";
+            this.Buscarbtn.UseVisualStyleBackColor = true;
+            // 
+            // BuscartextBox
+            // 
+            this.BuscartextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BuscartextBox.Location = new System.Drawing.Point(59, 24);
+            this.BuscartextBox.Name = "BuscartextBox";
+            this.BuscartextBox.Size = new System.Drawing.Size(244, 26);
+            this.BuscartextBox.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(739, 472);
+            this.dataGridView1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -149,41 +185,70 @@
             this.panel2.Size = new System.Drawing.Size(399, 559);
             this.panel2.TabIndex = 2;
             // 
-            // dataGridView1
+            // StocktextBox
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 69);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(739, 472);
-            this.dataGridView1.TabIndex = 0;
+            this.StocktextBox.Location = new System.Drawing.Point(278, 35);
+            this.StocktextBox.Name = "StocktextBox";
+            this.StocktextBox.Size = new System.Drawing.Size(99, 20);
+            this.StocktextBox.TabIndex = 7;
             // 
-            // BuscartextBox
+            // label6
             // 
-            this.BuscartextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuscartextBox.Location = new System.Drawing.Point(59, 24);
-            this.BuscartextBox.Name = "BuscartextBox";
-            this.BuscartextBox.Size = new System.Drawing.Size(244, 26);
-            this.BuscartextBox.TabIndex = 1;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(234, 38);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Stock:";
             // 
-            // Buscarbtn
+            // TipotextBox
             // 
-            this.Buscarbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buscarbtn.Location = new System.Drawing.Point(332, 17);
-            this.Buscarbtn.Name = "Buscarbtn";
-            this.Buscarbtn.Size = new System.Drawing.Size(125, 36);
-            this.Buscarbtn.TabIndex = 2;
-            this.Buscarbtn.Text = "Buscar";
-            this.Buscarbtn.UseVisualStyleBackColor = true;
+            this.TipotextBox.Location = new System.Drawing.Point(113, 234);
+            this.TipotextBox.Name = "TipotextBox";
+            this.TipotextBox.Size = new System.Drawing.Size(264, 20);
+            this.TipotextBox.TabIndex = 5;
             // 
-            // Todosbtn
+            // DescripciontextBox
             // 
-            this.Todosbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Todosbtn.Location = new System.Drawing.Point(474, 17);
-            this.Todosbtn.Name = "Todosbtn";
-            this.Todosbtn.Size = new System.Drawing.Size(201, 36);
-            this.Todosbtn.TabIndex = 3;
-            this.Todosbtn.Text = "Desplegar todos";
-            this.Todosbtn.UseVisualStyleBackColor = true;
+            this.DescripciontextBox.Location = new System.Drawing.Point(113, 73);
+            this.DescripciontextBox.Multiline = true;
+            this.DescripciontextBox.Name = "DescripciontextBox";
+            this.DescripciontextBox.Size = new System.Drawing.Size(264, 135);
+            this.DescripciontextBox.TabIndex = 4;
+            // 
+            // IdtextBox
+            // 
+            this.IdtextBox.Location = new System.Drawing.Point(113, 35);
+            this.IdtextBox.Name = "IdtextBox";
+            this.IdtextBox.Size = new System.Drawing.Size(99, 20);
+            this.IdtextBox.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(56, 237);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Tipo:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(21, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(66, 13);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Descripcion:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(21, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "ID del producto: ";
             // 
             // label1
             // 
@@ -203,71 +268,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Detalles";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "ID del producto: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Descripcion:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(56, 237);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Tipo:";
-            // 
-            // IdtextBox
-            // 
-            this.IdtextBox.Location = new System.Drawing.Point(113, 35);
-            this.IdtextBox.Name = "IdtextBox";
-            this.IdtextBox.Size = new System.Drawing.Size(99, 20);
-            this.IdtextBox.TabIndex = 3;
-            // 
-            // DescripciontextBox
-            // 
-            this.DescripciontextBox.Location = new System.Drawing.Point(113, 73);
-            this.DescripciontextBox.Multiline = true;
-            this.DescripciontextBox.Name = "DescripciontextBox";
-            this.DescripciontextBox.Size = new System.Drawing.Size(264, 135);
-            this.DescripciontextBox.TabIndex = 4;
-            // 
-            // TipotextBox
-            // 
-            this.TipotextBox.Location = new System.Drawing.Point(113, 234);
-            this.TipotextBox.Name = "TipotextBox";
-            this.TipotextBox.Size = new System.Drawing.Size(264, 20);
-            this.TipotextBox.TabIndex = 5;
-            // 
-            // StocktextBox
-            // 
-            this.StocktextBox.Location = new System.Drawing.Point(278, 35);
-            this.StocktextBox.Name = "StocktextBox";
-            this.StocktextBox.Size = new System.Drawing.Size(99, 20);
-            this.StocktextBox.TabIndex = 7;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(234, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 13);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Stock:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,9 +285,9 @@
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

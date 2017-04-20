@@ -7,3 +7,13 @@ C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.Properties.Resourc
 C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache
 C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.exe
 C:\Users\Esai\visual studio\Compras\Compras\obj\Debug\Compras.pdb
+C:\Users\brend\Documents\hiphop\compras\Compras\bin\Debug\Compras.exe.config
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.exe
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.pdb
+C:\Users\brend\Documents\hiphop\compras\Compras\bin\Debug\Compras.exe
+C:\Users\brend\Documents\hiphop\compras\Compras\bin\Debug\Compras.pdb
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.csprojResolveAssemblyReference.cache
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Form1.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.InsertFactura.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Properties.Resources.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache
