@@ -51,11 +51,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Conexion.cs" />
     <Compile Include="DescProdDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DescProdDataSet.xsd</DependentUpon>
+=======
+    <Compile Include="ConsultarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFactura.Designer.cs">
+      <DependentUpon>ConsultarFactura.cs</DependentUpon>
+>>>>>>> origin/master
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -63,6 +71,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="NomProvedorDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -86,6 +95,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pedido.resx">
       <DependentUpon>Pedido.cs</DependentUpon>
+=======
+    <Compile Include="InsertFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertFactura.Designer.cs">
+      <DependentUpon>InsertFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultarFactura.resx">
+      <DependentUpon>ConsultarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertFactura.resx">
+      <DependentUpon>InsertFactura.cs</DependentUpon>
+>>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
