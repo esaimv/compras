@@ -18,3 +18,6 @@ C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.Properties.Res
 C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache
 C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.Pedido.resources
 C:\Users\Esai\visual studio\compras\Compras\obj\Debug\Compras.Pedido.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\bin\Debug\Compras.exe.config
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.exe
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.pdb

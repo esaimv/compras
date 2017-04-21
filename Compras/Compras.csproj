@@ -52,10 +52,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="ConltarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConltarFactura.Designer.cs">
+      <DependentUpon>ConltarFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="DescProdDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DescProdDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -81,6 +93,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TablaPedidoDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConltarFactura.resx">
+      <DependentUpon>ConltarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
