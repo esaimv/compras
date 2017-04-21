@@ -58,6 +58,12 @@
     <Compile Include="ConltarFactura.Designer.cs">
       <DependentUpon>ConltarFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProveedor.Designer.cs">
+      <DependentUpon>ConsultarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="DescProdDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarProveedor.Designer.cs">
+      <DependentUpon>IngresarProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="NomProvedorDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -96,11 +108,17 @@
     <EmbeddedResource Include="ConltarFactura.resx">
       <DependentUpon>ConltarFactura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarProveedor.resx">
+      <DependentUpon>ConsultarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarProveedor.resx">
+      <DependentUpon>IngresarProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pedido.resx">
       <DependentUpon>Pedido.cs</DependentUpon>

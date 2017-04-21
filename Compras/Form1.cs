@@ -31,5 +31,10 @@ namespace Compras
         {
 
         }
+
+        private void nuevoPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
