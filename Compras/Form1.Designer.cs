@@ -36,6 +36,9 @@
             this.consultarFacturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Todosbtn = new System.Windows.Forms.Button();
             this.Buscarbtn = new System.Windows.Forms.Button();
@@ -52,9 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -103,12 +103,14 @@
             this.ingresarFacturaToolStripMenuItem.Name = "ingresarFacturaToolStripMenuItem";
             this.ingresarFacturaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.ingresarFacturaToolStripMenuItem.Text = "Ingresar factura";
+            this.ingresarFacturaToolStripMenuItem.Click += new System.EventHandler(this.ingresarFacturaToolStripMenuItem_Click);
             // 
             // consultarFacturaToolStripMenuItem
             // 
             this.consultarFacturaToolStripMenuItem.Name = "consultarFacturaToolStripMenuItem";
             this.consultarFacturaToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.consultarFacturaToolStripMenuItem.Text = "Consultar factura";
+            this.consultarFacturaToolStripMenuItem.Click += new System.EventHandler(this.consultarFacturaToolStripMenuItem_Click);
             // 
             // pedidosToolStripMenuItem
             // 
@@ -121,9 +123,30 @@
             // nuevoPedidoToolStripMenuItem
             // 
             this.nuevoPedidoToolStripMenuItem.Name = "nuevoPedidoToolStripMenuItem";
-            this.nuevoPedidoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoPedidoToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.nuevoPedidoToolStripMenuItem.Text = "Nuevo pedido";
             this.nuevoPedidoToolStripMenuItem.Click += new System.EventHandler(this.nuevoPedidoToolStripMenuItem_Click);
+            // 
+            // proveedoresToolStripMenuItem
+            // 
+            this.proveedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarProveedorToolStripMenuItem,
+            this.consultarProveedorToolStripMenuItem});
+            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            // 
+            // ingresarProveedorToolStripMenuItem
+            // 
+            this.ingresarProveedorToolStripMenuItem.Name = "ingresarProveedorToolStripMenuItem";
+            this.ingresarProveedorToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.ingresarProveedorToolStripMenuItem.Text = "Ingresar proveedor";
+            // 
+            // consultarProveedorToolStripMenuItem
+            // 
+            this.consultarProveedorToolStripMenuItem.Name = "consultarProveedorToolStripMenuItem";
+            this.consultarProveedorToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
+            this.consultarProveedorToolStripMenuItem.Text = "Consultar proveedor";
             // 
             // panel1
             // 
@@ -272,27 +295,6 @@
             this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Detalles";
-            // 
-            // proveedoresToolStripMenuItem
-            // 
-            this.proveedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarProveedorToolStripMenuItem,
-            this.consultarProveedorToolStripMenuItem});
-            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
-            this.proveedoresToolStripMenuItem.Text = "Proveedores";
-            // 
-            // ingresarProveedorToolStripMenuItem
-            // 
-            this.ingresarProveedorToolStripMenuItem.Name = "ingresarProveedorToolStripMenuItem";
-            this.ingresarProveedorToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.ingresarProveedorToolStripMenuItem.Text = "Ingresar proveedor";
-            // 
-            // consultarProveedorToolStripMenuItem
-            // 
-            this.consultarProveedorToolStripMenuItem.Name = "consultarProveedorToolStripMenuItem";
-            this.consultarProveedorToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.consultarProveedorToolStripMenuItem.Text = "Consultar proveedor";
             // 
             // Form1
             // 

@@ -33,3 +33,14 @@ C:\Users\Karen\Documents\GitHub\compras\Compras\obj\Debug\Compras.Form1.resource
 C:\Users\Karen\Documents\GitHub\compras\Compras\obj\Debug\Compras.Pedido.resources
 C:\Users\Karen\Documents\GitHub\compras\Compras\obj\Debug\Compras.Properties.Resources.resources
 C:\Users\Karen\Documents\GitHub\compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache
+C:\Users\brend\Documents\hiphop\compras\Compras\bin\Debug\Compras.exe
+C:\Users\brend\Documents\hiphop\compras\Compras\bin\Debug\Compras.pdb
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.csprojResolveAssemblyReference.cache
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.ConltarFactura.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.ConsultarProveedor.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Factura.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Form1.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.IngresarProveedor.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Pedido.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Properties.Resources.resources
+C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache

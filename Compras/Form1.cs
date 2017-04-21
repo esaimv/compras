@@ -36,5 +36,20 @@ namespace Compras
         {
 
         }
+
+        private void ingresarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Factura ingresa = new Factura();
+            ingresa.Show();
+            this.Hide();
+
+        }
+
+        private void consultarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConltarFactura consulta = new ConltarFactura();
+            consulta.Show();
+            this.Hide();
+        }
     }
 }
