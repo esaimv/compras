@@ -7,14 +7,102 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Compras
 {
     public partial class ConsultarProveedor : Form
     {
+        public string cadenaconexion;
+        public string Sql;
+        protected SqlConnection con;
+        protected SqlCommand ComSql;
         public ConsultarProveedor()
         {
+            this.cadenaconexion = (@"Data Source=.; Initial Catalog= COMPRAS; Integrated security=true");
+            this.con = new SqlConnection(this.cadenaconexion);
             InitializeComponent();
+        }
+
+        private void EliminarButton_Click(object sender, EventArgs e)
+        {
+           
+            this.Sql = string.Format("DELETE FROM PROVEEDOR WHERE id_proveedor='"+IDTextBox.Text+"'");
+            this.ComSql = new SqlCommand(Sql, con);
+            this.con.Open();
+            SqlDataReader Reg = null;
+            Reg = this.ComSql.ExecuteReader();
+            this.con.Close();
+            MessageBox.Show("Se borro ");
+            carga();
+        }
+
+        public void carga() {
+
+            this.con.Open();
+            this.Sql = string.Format("SELECT * FROM PROVEEDOR");
+            this.ComSql = new SqlCommand(Sql, con);   
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(ComSql);
+            da.Fill(dt);
+            dataGridViewProvedores.DataSource = dt;
+            SqlDataReader Reg = null;
+            Reg = this.ComSql.ExecuteReader();
+            this.con.Close();
+            
+        }
+
+        private void bindingNavigatorAddNewItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ConsultarProveedor_Load(object sender, EventArgs e)
+        {
+            carga();
+        }
+
+        private void ModificarButton_Click(object sender, EventArgs e)
+        {
+            IngresarProveedor i = new IngresarProveedor();
+            i.Show();
+        }
+
+        private void GuardarButton_Click(object sender, EventArgs e)
+        {
+            carga();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.con.Open();
+            this.Sql = string.Format("SELECT * FROM PROVEEDOR where id_proveedor='"+IDTextBox.Text+"'");
+            this.ComSql = new SqlCommand(Sql, con);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(ComSql);
+            da.Fill(dt);
+            dataGridViewProvedores.DataSource = dt;
+            SqlDataReader Reg = null;
+            Reg = this.ComSql.ExecuteReader();
+            this.con.Close();
+
         }
     }
 }

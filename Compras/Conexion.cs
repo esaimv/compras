@@ -13,7 +13,7 @@ namespace Compras
         public string Sql;
         protected SqlConnection con;
         protected SqlCommand ComSql;
-        protected string Mensaje;
+    
 
 
         public Conexion() {

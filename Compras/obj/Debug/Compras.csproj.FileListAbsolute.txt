@@ -44,3 +44,7 @@ C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.IngresarProvee
 C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Pedido.resources
 C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.Properties.Resources.resources
 C:\Users\brend\Documents\hiphop\compras\Compras\obj\Debug\Compras.csproj.GenerateResource.Cache
+C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.ConltarFactura.resources
+C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.ConsultarProveedor.resources
+C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.Factura.resources
+C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.IngresarProveedor.resources

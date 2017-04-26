@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -37,12 +38,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cod_postaltext = new System.Windows.Forms.TextBox();
+            this.rfctext = new System.Windows.Forms.TextBox();
+            this.emailtext = new System.Windows.Forms.TextBox();
+            this.teltext = new System.Windows.Forms.TextBox();
+            this.Direcctext = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -69,10 +69,16 @@
             this.label14 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Clientecombo = new System.Windows.Forms.ComboBox();
+            this.provedor_idDataSet = new Compras.Provedor_idDataSet();
+            this.pROVEEDORBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.pROVEEDORTableAdapter = new Compras.Provedor_idDataSetTableAdapters.PROVEEDORTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.provedor_idDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROVEEDORBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox2
@@ -147,12 +153,12 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.Clientecombo);
+            this.panel1.Controls.Add(this.cod_postaltext);
+            this.panel1.Controls.Add(this.rfctext);
+            this.panel1.Controls.Add(this.emailtext);
+            this.panel1.Controls.Add(this.teltext);
+            this.panel1.Controls.Add(this.Direcctext);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
@@ -165,48 +171,41 @@
             this.panel1.Size = new System.Drawing.Size(492, 155);
             this.panel1.TabIndex = 29;
             // 
-            // textBox8
+            // cod_postaltext
             // 
-            this.textBox8.Location = new System.Drawing.Point(340, 100);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(92, 20);
-            this.textBox8.TabIndex = 24;
+            this.cod_postaltext.Location = new System.Drawing.Point(340, 100);
+            this.cod_postaltext.Name = "cod_postaltext";
+            this.cod_postaltext.Size = new System.Drawing.Size(92, 20);
+            this.cod_postaltext.TabIndex = 24;
             // 
-            // textBox7
+            // rfctext
             // 
-            this.textBox7.Location = new System.Drawing.Point(299, 69);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(133, 20);
-            this.textBox7.TabIndex = 23;
+            this.rfctext.Location = new System.Drawing.Point(299, 69);
+            this.rfctext.Multiline = true;
+            this.rfctext.Name = "rfctext";
+            this.rfctext.Size = new System.Drawing.Size(133, 20);
+            this.rfctext.TabIndex = 23;
             // 
-            // textBox6
+            // emailtext
             // 
-            this.textBox6.Location = new System.Drawing.Point(299, 39);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(133, 20);
-            this.textBox6.TabIndex = 22;
+            this.emailtext.Location = new System.Drawing.Point(299, 39);
+            this.emailtext.Name = "emailtext";
+            this.emailtext.Size = new System.Drawing.Size(133, 20);
+            this.emailtext.TabIndex = 22;
             // 
-            // textBox5
+            // teltext
             // 
-            this.textBox5.Location = new System.Drawing.Point(68, 100);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 21;
+            this.teltext.Location = new System.Drawing.Point(68, 100);
+            this.teltext.Name = "teltext";
+            this.teltext.Size = new System.Drawing.Size(100, 20);
+            this.teltext.TabIndex = 21;
             // 
-            // textBox4
+            // Direcctext
             // 
-            this.textBox4.Location = new System.Drawing.Point(68, 76);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 20);
-            this.textBox4.TabIndex = 20;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(68, 50);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 20);
-            this.textBox3.TabIndex = 19;
+            this.Direcctext.Location = new System.Drawing.Point(68, 76);
+            this.Direcctext.Name = "Direcctext";
+            this.Direcctext.Size = new System.Drawing.Size(146, 20);
+            this.Direcctext.TabIndex = 20;
             // 
             // label13
             // 
@@ -427,6 +426,31 @@
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // Clientecombo
+            // 
+            this.Clientecombo.DataSource = this.pROVEEDORBindingSource;
+            this.Clientecombo.DisplayMember = "id_proveedor";
+            this.Clientecombo.FormattingEnabled = true;
+            this.Clientecombo.Location = new System.Drawing.Point(68, 46);
+            this.Clientecombo.Name = "Clientecombo";
+            this.Clientecombo.Size = new System.Drawing.Size(146, 21);
+            this.Clientecombo.TabIndex = 25;
+            this.Clientecombo.SelectedIndexChanged += new System.EventHandler(this.Clientecombo_SelectedIndexChanged);
+            // 
+            // provedor_idDataSet
+            // 
+            this.provedor_idDataSet.DataSetName = "Provedor_idDataSet";
+            this.provedor_idDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pROVEEDORBindingSource
+            // 
+            this.pROVEEDORBindingSource.DataMember = "PROVEEDOR";
+            this.pROVEEDORBindingSource.DataSource = this.provedor_idDataSet;
+            // 
+            // pROVEEDORTableAdapter
+            // 
+            this.pROVEEDORTableAdapter.ClearBeforeFill = true;
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -448,6 +472,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Factura";
             this.Text = "Factura";
+            this.Load += new System.EventHandler(this.Factura_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -455,6 +480,8 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.provedor_idDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROVEEDORBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,12 +498,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox cod_postaltext;
+        private System.Windows.Forms.TextBox rfctext;
+        private System.Windows.Forms.TextBox emailtext;
+        private System.Windows.Forms.TextBox teltext;
+        private System.Windows.Forms.TextBox Direcctext;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
@@ -503,5 +529,9 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox Clientecombo;
+        private Provedor_idDataSet provedor_idDataSet;
+        private System.Windows.Forms.BindingSource pROVEEDORBindingSource;
+        private Provedor_idDataSetTableAdapters.PROVEEDORTableAdapter pROVEEDORTableAdapter;
     }
 }
