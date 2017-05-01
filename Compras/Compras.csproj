@@ -75,6 +75,11 @@
     <Compile Include="Factura.Designer.cs">
       <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
+    <Compile Include="FacturaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FacturaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +102,21 @@
     </Compile>
     <Compile Include="Pedido.Designer.cs">
       <DependentUpon>Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PedidoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PedidooDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidooDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProductoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -148,6 +168,17 @@
     <None Include="DescProdDataSet.xss">
       <DependentUpon>DescProdDataSet.xsd</DependentUpon>
     </None>
+    <None Include="FacturaDataSet.xsc">
+      <DependentUpon>FacturaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FacturaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FacturaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FacturaDataSet.xss">
+      <DependentUpon>FacturaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="NomProvedorDataSet.xsc">
       <DependentUpon>NomProvedorDataSet.xsd</DependentUpon>
     </None>
@@ -158,6 +189,39 @@
     </None>
     <None Include="NomProvedorDataSet.xss">
       <DependentUpon>NomProvedorDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PedidoDataSet.xsc">
+      <DependentUpon>PedidoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PedidoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PedidoDataSet.xss">
+      <DependentUpon>PedidoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PedidooDataSet.xsc">
+      <DependentUpon>PedidooDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PedidooDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidooDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PedidooDataSet.xss">
+      <DependentUpon>PedidooDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductoDataSet.xsc">
+      <DependentUpon>ProductoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProductoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProductoDataSet.xss">
+      <DependentUpon>ProductoDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

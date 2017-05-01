@@ -104,5 +104,31 @@ namespace Compras
             this.con.Close();
 
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void consultarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarProveedor consu = new ConsultarProveedor();
+            consu.Show();
+            this.Hide();
+        }
+
+        private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IngresarProveedor insert = new IngresarProveedor();
+            insert.Show();
+            this.Hide();
+        }
+
+        private void nuevoPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 pedido = new Compras.Form1();
+            pedido.Show();
+            this.Hide();
+        }
     }
 }

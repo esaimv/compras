@@ -31,13 +31,14 @@ namespace Compras
             back.Show();
         }
 
-        public int id_proveedor {
-            get { return this.id_proveedor; }
-            set { this.id_proveedor = value; }
-        }
+
 
         private void Factura_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'pedidooDataSet.PEDIDO' Puede moverla o quitarla según sea necesario.
+            this.pEDIDOTableAdapter1.Fill(this.pedidooDataSet.PEDIDO);
+            // TODO: esta línea de código carga datos en la tabla 'pedidoDataSet.PEDIDO' Puede moverla o quitarla según sea necesario.
+            
             // TODO: esta línea de código carga datos en la tabla 'provedor_idDataSet.PROVEEDOR' Puede moverla o quitarla según sea necesario.
             this.pROVEEDORTableAdapter.Fill(this.provedor_idDataSet.PROVEEDOR);
 
@@ -45,10 +46,84 @@ namespace Compras
 
         private void Clientecombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.Sql = string.Format(@"Select * FROM registro_mp WHERE id_proveedor='{0}'", this.id_proveedor);
+            
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Sql = string.Format(@"Select nombre, telefono, email, direccion, rfc, codigo_postal FROM PROVEEDOR WHERE id_proveedor='" + Clientecombo.Text+"'");
             this.ComSql = new SqlCommand(this.Sql, this.con);
             this.con.Open();
+            SqlDataReader reader = ComSql.ExecuteReader();
 
+            if (reader.Read()) {
+                nombretext.Text = (string)reader["nombre"];
+                Direcctext.Text = (string)reader["direccion"];
+                teltext.Text = Convert.ToString(reader["telefono"]);
+                emailtext.Text = (string)reader["email"];
+                rfctext.Text = (string)reader["rfc"];
+                cod_postaltext.Text = Convert.ToString(reader["codigo_postal"]);
+            }
+            reader.Close();
+            this.con.Close();
+
+            
+
+        
+            
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IngresarProveedor insert = new IngresarProveedor();
+            insert.Show();
+            this.Hide();
+        }
+
+        private void consultarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarProveedor ingresa = new ConsultarProveedor();
+            ingresa.Show();
+            this.Hide();
+        }
+
+        private void nuevoPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 pedido = new Form1();
+            pedido.Show();
+            this.Hide();
+        }
+
+        private void consultarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.con.Open();
+            this.Sql = string.Format("SELECT * FROM PEDIDO where id_pedido='" + combopedido.Text + "'");
+            this.ComSql = new SqlCommand(Sql, con);
+
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(ComSql);
+            da.Fill(dt);
+            dataGridViewpedidof.DataSource = dt;
+            SqlDataReader Reg = null;
+            Reg = this.ComSql.ExecuteReader();
+            this.con.Close();
 
         }
     }

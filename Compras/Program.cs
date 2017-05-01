@@ -16,7 +16,7 @@ namespace Compras
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ConsultarProveedor());
+            Application.Run(new Form1());
         }
     }
 }

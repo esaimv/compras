@@ -53,6 +53,37 @@ namespace Compras
             MessageBox.Show("Agregado al inventario!");
             this.Close();
 
+            ConsultarProveedor consulta = new ConsultarProveedor();
+            consulta.Show();
+            this.Hide();
+
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ingresarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IngresarProveedor insert = new IngresarProveedor();
+            insert.Show();
+            this.Hide();
+        }
+
+        private void consultarProveedorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarProveedor ingresa = new ConsultarProveedor();
+            ingresa.Show();
+            this.Hide();
+        }
+
+        private void nuevoPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 pedido = new Compras.Form1();
+            pedido.Show();
+            this.Hide();
+
         }
     }
 }
