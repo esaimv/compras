@@ -48,3 +48,8 @@ C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.ConsultarProve
 C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.Factura.resources
 C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.IngresarProveedor.resources
 C:\Users\luish\Documents\GitHub\compras\Compras\obj\Debug\Compras.Form1.resources
+C:\Users\Karen\Documents\GitHub\compras\Compras\obj\Debug\Compras.ConsultarProveedor.resources
+C:\Users\Karen\Documents\GitHub\compras\Compras\obj\Debug\Compras.IngresarProveedor.resources
+C:\Users\Karen\Desktop\compras\Compras\bin\Debug\Compras.exe.config
+C:\Users\Karen\Desktop\compras\Compras\obj\Debug\Compras.exe
+C:\Users\Karen\Desktop\compras\Compras\obj\Debug\Compras.pdb
